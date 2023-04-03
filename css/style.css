@@ -1,0 +1,561 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #3f2222;
+}
+
+#header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    z-index: 999;
+    background-color: #3f2222;
+    display: none;
+}
+
+.container{
+    height: 103.8%;
+}
+
+.first-content{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(176deg,#3f2222 70%, #F4F4F4 calc(70% + 2px));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display:none;
+}
+
+/************************************************/
+/****************** NAVEGAÇÃO ******************/
+/************************************************/
+nav {
+    color: #1d1f20;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: flex;
+    font: 2em/1 'Oswald', sans-serif;
+    padding: 0.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkmenu{
+    min-width: 5vw;
+    display: inline-flexbox;
+    float: right;   
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #ced1d3;
+    border-radius: 0.05em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    min-width: 1em;
+    max-width: 1em;
+    position: relative;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+    
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+    background-image: linear-gradient(176deg,#3f2222 70%, #3f2222 calc(70% + 2px));
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+
+/* List */
+nav ul {
+    font-size: 3em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+nav input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+
+nav ul#links > li {
+    margin: 1vh 0 1vh 0;
+    padding: 3px 0 3px 0;
+}
+
+
+nav ul#links a {
+    color: rgb(223, 223, 223);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #eabe68;
+    
+    margin: 1vh -.25rem;
+    padding: 0px 20px 0px 20px;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+
+nav ul#links a:hover {
+    box-shadow: inset 200px 0 0 0 #eabe68;
+    color: #3f2222;
+    
+}
+
+.title{
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    color: #ced1d3;
+    margin: 0.5vh 0 0 1vw;
+}
+
+.animate-charcter, .animate-charcter2{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #eabe68 0%,
+        #eabe68 29%,
+        #bb9549 67%,
+        #ffc44f 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+nav ul#social-media > li {
+    display: inline-block;
+    font-size: 1em;
+    margin: -2vh 0 ;
+}
+
+nav ul#social-media > li > a {
+    color:rgb(223, 223, 223);
+}
+
+nav ul#social-media > li > a:hover {
+    color: #eabe68;
+}
+
+svg{
+    background-color: transparent;
+}
+
+  
+
+.container1{
+    display: inline-flex;
+    position: relative;
+    width: 90%;
+    height: 50%;
+    margin: 5% 0 2% 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container1-displaynone {
+    display: none;
+}
+
+.texto-container1 {
+    display: flex;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+}
+
+.texto-container1 p{
+    display: flexbox;
+    position: absolute;
+    top: 2.5vw;
+    left: 1vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: clamp(2.1em, 1.5em + 1.5vw, 3.5em);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(223, 223, 223);
+}
+
+.color-text-spam, .color-text-spam2{
+    color: #eabe68;
+}
+
+
+.botao-container1{
+    display: flex;
+    position: absolute;
+    width: 15vw;
+    height: 10vh;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 5vh 5vh;
+}
+
+.botao-container1 button{
+    display: flex;
+    position: absolute;
+    width: 15vw;
+    height: 10vh;
+    bottom: 1vh;
+    left: 2vw;
+    background-color: transparent;
+    border: 4px #eabe68 solid;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.botao-container1 button:hover{
+    background-color: #eabe68;
+    color:#3f2222;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.foto-container1{
+    display: inline-flex;
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    top:0;
+    right: 2vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-container1 > img{
+    width: 18vw;
+    height: 18vw;
+}
+
+.foto-container1 > img:hover{
+    width: 18vw;
+    height: 18vw;
+    filter: drop-shadow(0px 0px 2px #eabe68);
+    transform: translateY(-10px);
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-down-container{
+    display: flex;
+    position: absolute;
+    width: 5vw;
+    height: 31vh;
+    right: 0;
+    bottom: 0;  
+}
+
+.text-scroll-down{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-weight: bold;
+    font-size: 1rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: #3f2222;
+    animation: scroll 3s linear infinite;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateY(10px);
+    }
+
+    20%{
+        transform: translateY(20px);
+    }
+
+    20%{
+        transform: translateY(30px);
+    }
+
+    30%{
+        transform: translateY(40px);
+    }
+
+    40%{
+        transform: translateY(50px);
+    }
+
+    50%{
+        transform: translateY(60px);
+    }
+
+    60%{
+        transform: translateY(50px);
+    }
+
+    70%{
+        transform: translateY(40px);
+    }
+
+    80%{
+        transform: translateY(30px);
+    }
+
+    90%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(10px);
+    }
+
+}
+
+.scroll-down-container > svg{
+    display: flex;
+    position: absolute;
+    bottom: 2vh;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.second-content{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #F4F4F4;
+    display:none;
+}
+
+
+.checkbox-darkmode {
+    opacity: 0;
+    position: absolute;
+}
+
+.button-darkmode {
+    min-width: 4vw;
+    max-width: 4vw;
+    min-height: 4vh;
+    max-height: 4vh;
+    background-color:#1a1919;
+    display: inline-flex;
+    border-radius:50px;
+    margin: 1vw;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    float: right;
+    top:1vh;
+    right: 1vw;
+    border: none;
+}
+
+.dark-mode-header{
+    background-color: #1a1919;
+}
+
+.dark-mode-first-content{
+    background-image: linear-gradient(176deg,#1a1919 70%, #9c9b9b calc(70% + 2px));
+}
+
+.dark-mode-menu{
+    background-image: linear-gradient(176deg,#1a1919 70%, #1a1919 calc(70% + 2px));
+}
+
+.dark-mode-second-content{
+    background-image: linear-gradient(176deg,#1a1919 80%, #9c9b9b calc(80% + 2px));
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+
+.bi-brightness-high-fill{
+    color: white;
+}
+
+
+main {
+    display: flex;
+	position: relative;
+	width: 100%;
+	padding: 0 18px;
+    background-image: linear-gradient(176deg,#3f2222 80%, #F4F4F4 calc(80% + 2px));
+    align-items: center;
+}
+
+.about-me-content{
+    display: inline-flex;
+    position: relative;
+    width: 45vw;
+    height: 30vw;
+    margin-left: 5vw;
+    padding: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.about-me-photo{
+    display: flex;
+    position: absolute;
+    width: 35vw;
+    height: 30vw;
+    border-top: 1.5vw #eabe68 solid;
+}
+
+h1{
+    display: flex;
+    width: 35vw;
+    position: absolute;
+    font-size: 3vw;
+    color: #fff;
+    top: 2%;
+    left: 30%;
+}
+
+.about-me-photo > img{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    width: 18vw;
+    height: 18vw;
+}
+
+.about-me-content-text{
+    display: inline-flex;
+    position: relative;
+    margin-left: -4vw;
+    width: 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1.5vw #eabe68 solid;
+}
+
+.about-me-content-textabs{
+    display: flex;
+    position: absolute;
+    width: 39vw;
+    height: 49vh;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: white;
+    padding: 1vw;
+}
+
+
+

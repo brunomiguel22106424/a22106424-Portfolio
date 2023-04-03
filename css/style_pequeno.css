@@ -1,0 +1,200 @@
+@media (max-width: 600px) {
+    .first-content{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(176deg,#3f2222 70%, #F4F4F4 calc(70% + 2px));
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display:none;
+        justify-content: center;
+    }
+
+    .foto-container1{
+        display: inline-flex;
+        position: absolute;
+        width: 10%;
+        height: 55%;
+        top:0;
+        right: 0; 
+    }
+
+    .botao-container1{
+        display: flex;
+        position: absolute;
+        width: 20vw;
+        height: 10vh;
+        bottom: 7vh;
+        left: 0vw;
+        z-index: 0;
+    }
+
+    .botao-container1 button{
+        display: flex;
+        position: absolute;
+        width: 20vw;
+        height: 10vh;
+        bottom: 0vh;
+        left: 0vw;
+        background-color: transparent;
+        border: 4px #eabe68 solid;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1rem;
+        z-index: 1;
+    }
+
+    .container1{
+        display: inline-flex;
+        position: relative;
+        width: 90%;
+        height: 60%;
+        margin: 5% 0 2% 2%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button-darkmode {
+        min-width: 8vw;
+        max-width: 8vw;
+        min-height: 5vh;
+        max-height: 5vh;
+        background-color:#1a1919;
+        display: inline-flex;
+        border-radius:50px;
+        margin: 1vw;
+        padding: 5px;
+        position: relative;
+        transform: scale(1.5);
+        float: right;
+        top:2vh;
+        right: 1vw;
+        border: none;
+    }
+
+    .dark-mode-header{
+        background-color: #1a1919;
+    }
+    
+    .dark-mode-first-content{
+        background-image: linear-gradient(176deg,#1a1919 70%, #9c9b9b calc(70% + 2px));
+    }
+    
+    .dark-mode-menu{
+        background-image: linear-gradient(176deg,#1a1919 70%, #1a1919 calc(70% + 2px));
+    }
+    
+    .dark-mode-second-content{
+        background-image: linear-gradient(176deg,#1a1919 80%, #9c9b9b calc(80% + 2px));
+    }
+
+    .scroll-down-container{
+        display: flex;
+        position: absolute;
+        width: 5vw;
+        height: 31vh;
+        right: 1vh;
+        bottom: 0;  
+    }
+
+    @keyframes scroll{
+        0%{
+            transform: translateY(-10px);
+        }
+    
+        20%{
+            transform: translateY(0px);
+        }
+    
+        20%{
+            transform: translateY(10px);
+        }
+    
+        30%{
+            transform: translateY(20px);
+        }
+    
+        40%{
+            transform: translateY(30px);
+        }
+    
+        50%{
+            transform: translateY(40px);
+        }
+    
+        60%{
+            transform: translateY(30px);
+        }
+    
+        70%{
+            transform: translateY(20px);
+        }
+    
+        80%{
+            transform: translateY(10px);
+        }
+    
+        90%{
+            transform: translateY(0px);
+        }
+    
+        100%{
+            transform: translateY(-10px);
+        }
+    }
+
+    .about-me-content{
+        display: inline-flex;
+        position: relative;
+        width: 45vw;
+        height: 50vw;
+        margin-left: 0vw;
+        padding: 1vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me-photo{
+        display: flex;
+        position: absolute;
+        width: 45vw;
+        height: 50vw;
+        border-top: 1.5vw #eabe68 solid;
+    }
+
+    .about-me-photo > img{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 53%;
+        transform: translate(-50%,-50%);
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .about-me-content-text{
+        display: inline-flex;
+        position: relative;
+        margin-left: 2vw;
+        width: 45vw;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1.5vw #eabe68 solid;
+    }
+    
+    .about-me-content-textabs{
+        display: flex;
+        position: absolute;
+        width: 45vw;
+        height: 50vh;
+        align-items: center;
+        letter-spacing: 1px;
+        font-size: 1.9vw;
+        color: white;
+        padding: 1vw;
+    }
+}
