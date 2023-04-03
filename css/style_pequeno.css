@@ -1,7 +1,60 @@
 @media (max-width: 600px) {
+    #header{
+        position: -webkit-sticky;
+        position: sticky;
+        justify-content: space-between;
+        z-index: 999;
+        background-color: #3f2222;
+        display: none;
+    }
+
+    #menu-icon,
+    #menu-icon:before,
+    #menu-icon:after {
+        background: #ced1d3;
+        border-radius: 0.05em;
+        height: 0.2em;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+    }   
+
+    #menu-icon {
+        display: inline-block;
+        margin: 0.2em 0;
+        min-width: 1em;
+        max-width: 1em;
+        position: relative;
+    }
+
+    .title{
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 1.8rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 1px;
+        color: #ced1d3;
+        margin: 1vh 0 0 1vw;
+    }
+
+    #checkmenu{
+        margin-left: 3vw;
+        max-width: 5vw;
+        display: inline-flexbox;
+        float: right;  
+    }
+
+    .container1{
+        display: inline-flex;
+        position: relative;
+        width: 90%;
+        height: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
     .first-content{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         background-image: linear-gradient(176deg,#3f2222 70%, #F4F4F4 calc(70% + 2px));
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -13,26 +66,42 @@
     .foto-container1{
         display: inline-flex;
         position: absolute;
+        margin-top: 30vw;
         width: 10%;
-        height: 55%;
-        top:0;
-        right: 0; 
+        height: 60%;
+        bottom: 0;
+        right: 10vw;
+    }
+
+    .foto-container1 > img{
+        position: absolute;
+        bottom: 0;
+        width: 40vw;
+        height: 40vw;
+    }
+    
+    .foto-container1 > img:hover{
+        width: 18vw;
+        height: 18vw;
+        filter: drop-shadow(0px 0px 2px #eabe68);
+        transform: translateY(-10px);
+        transition: all 0.5s ease-in-out;
     }
 
     .botao-container1{
         display: flex;
         position: absolute;
-        width: 20vw;
+        width: 35vw;
         height: 10vh;
-        bottom: 7vh;
-        left: 0vw;
+        bottom: 0vh;
+        left: 0;
         z-index: 0;
     }
 
     .botao-container1 button{
         display: flex;
         position: absolute;
-        width: 20vw;
+        width: 35vw;
         height: 10vh;
         bottom: 0vh;
         left: 0vw;
@@ -47,6 +116,14 @@
         z-index: 1;
     }
 
+    .botao-container1 button:hover{
+        background-color: #eabe68;
+        color:#3f2222;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: all 0.4s ease-in-out;
+    }
+
     .container1{
         display: inline-flex;
         position: relative;
@@ -58,10 +135,10 @@
     }
 
     .button-darkmode {
-        min-width: 8vw;
-        max-width: 8vw;
-        min-height: 5vh;
-        max-height: 5vh;
+        min-width: 10vw;
+        max-width: 10vw;
+        min-height: 3vh;
+        max-height: 3vh;
         background-color:#1a1919;
         display: inline-flex;
         border-radius:50px;
@@ -73,6 +150,17 @@
         top:2vh;
         right: 1vw;
         border: none;
+    }
+
+    .ball {
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        border-radius: 50%;
+        transition: transform 0.2s linear;
     }
 
     .dark-mode-header{
@@ -102,56 +190,60 @@
 
     @keyframes scroll{
         0%{
+            transform: translateY(-30px);
+        }
+    
+        20%{
+            transform: translateY(-20px);
+        }
+    
+        20%{
             transform: translateY(-10px);
-        }
-    
-        20%{
-            transform: translateY(0px);
-        }
-    
-        20%{
-            transform: translateY(10px);
         }
     
         30%{
-            transform: translateY(20px);
-        }
-    
-        40%{
-            transform: translateY(30px);
-        }
-    
-        50%{
-            transform: translateY(40px);
-        }
-    
-        60%{
-            transform: translateY(30px);
-        }
-    
-        70%{
-            transform: translateY(20px);
-        }
-    
-        80%{
-            transform: translateY(10px);
-        }
-    
-        90%{
             transform: translateY(0px);
         }
     
-        100%{
+        40%{
+            transform: translateY(10px);
+        }
+    
+        50%{
+            transform: translateY(20px);
+        }
+    
+        60%{
+            transform: translateY(10px);
+        }
+    
+        70%{
+            transform: translateY(0px);
+        }
+    
+        80%{
             transform: translateY(-10px);
+        }
+    
+        90%{
+            transform: translateY(-20px);
+        }
+    
+        100%{
+            transform: translateY(-30px);
         }
     }
 
     .about-me-content{
-        display: inline-flex;
-        position: relative;
+        display: flexbox;
+        position: absolute;
         width: 45vw;
         height: 50vw;
+        margin-top: 5vh;
         margin-left: 0vw;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
         padding: 1vw;
         justify-content: center;
         align-items: center;
@@ -171,18 +263,19 @@
         top: 50%;
         left: 53%;
         transform: translate(-50%,-50%);
-        width: 22vw;
-        height: 22vw;
+        width: 30vw;
+        height: 30vw;
     }
 
     .about-me-content-text{
-        display: inline-flex;
-        position: relative;
+        display: flexbox;
+        position: absolute;
         margin-left: 2vw;
         width: 45vw;
         height: 50vh;
-        justify-content: center;
-        align-items: center;
+        top:25%;
+        left: 50%;
+        transform: translate(-50%, -10%);
         border-bottom: 1.5vw #eabe68 solid;
     }
     
@@ -191,10 +284,40 @@
         position: absolute;
         width: 45vw;
         height: 50vh;
+        margin-top: 15vh;
         align-items: center;
         letter-spacing: 1px;
-        font-size: 1.9vw;
+        font-size: 2.2vw;
         color: white;
         padding: 1vw;
+        text-align: center;
     }
+
+    h1{
+        display: flex;
+        width: 35vw;
+        position: absolute;
+        font-size: 5vw;
+        color: #fff;
+        top: 2%;
+        left: 30%;
+    }
+
+    .second-content{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #F4F4F4;
+        display:none;
+    }
+
+    main {
+        display: flex;
+        position: relative;
+        width: 100%;
+        padding: 0 18px;
+        background-image: linear-gradient(176deg,#3f2222 80%, #F4F4F4 calc(80% + 2px));
+    }
+
+    
 }
