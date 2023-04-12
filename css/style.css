@@ -878,8 +878,7 @@ button:active{
     padding: 5rem 1rem;
     text-align: center;
     text-transform: capitalize;
-    font-weight: 600;
-    
+    font-weight: 600;  
 }
 
 .grid-wrapper li > img{
@@ -1308,16 +1307,7 @@ section.contact-me {
     color:#eabe68;
 }
 
-#linhafooter2{
-    position: absolute;
-    width: 90%;
-    height: 1%;
-    background-color: #747474;
-    bottom:10%;
-    left: 0;
-    margin: 0 5% 0 5%;
-    opacity: 0.3;
-}
+
 
 .footer2 #email h2{
     position: absolute;
@@ -1342,6 +1332,17 @@ section.contact-me {
     opacity: 0.8;
 }
 
+#linhafooter2{
+    position: absolute;
+    width: 90%;
+    height: 1%;
+    background-color: #747474;
+    bottom:10%;
+    left: 0;
+    margin: 0 5% 0 5%;
+    opacity: 0.3;
+}
+
 .footer3{
     display: inline-flex;
     position: absolute;
@@ -1360,6 +1361,7 @@ section.contact-me {
     font-size: 1.3rem;
     color: #fff;
     opacity: 0.8;
+    
 }
 
 .footer3 img{
