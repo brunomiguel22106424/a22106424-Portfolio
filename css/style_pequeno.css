@@ -66,7 +66,7 @@
     .foto-container1{
         display: inline-flex;
         position: absolute;
-        margin-top: 30vw;
+        margin-top: 40vw;
         width: 10%;
         height: 60%;
         bottom: 0;
@@ -93,7 +93,7 @@
         position: absolute;
         width: 35vw;
         height: 10vh;
-        bottom: -15vh;
+        bottom: -20vh;
         left: 0;
         z-index: 0;
     }
@@ -312,14 +312,14 @@
     }
     
     .grid-content-heading h1{
-        padding-left: 10%;
+        padding-left: 5%;
         font-size: 2rem;
     }
     
     .grid-wrapper{
         display: grid;
         width: 100%;
-        margin-top: 6vh;
+        margin-top: 8vh;
         margin-left: 0%;
         row-gap: 1rem;
         column-gap: 3rem;
@@ -335,7 +335,7 @@
         color: #ffffff;
         font-size: 24px;
         list-style-type: none;
-        padding: 3.5rem 1rem;
+        padding: 4rem 1rem;
         text-align: center;
         text-transform: capitalize;
         font-weight: 600;
@@ -444,7 +444,7 @@
     .footer{
         position: relative;
         width: 100%;
-        height: 60vh;
+        height: 40vh;
         display: none;
         z-index: 1;
     }
@@ -460,6 +460,7 @@
         height: 50vh;
         justify-content: center;
         align-items: center;
+        bottom: 0;
     }
 
     .info1{
@@ -468,7 +469,7 @@
     
     .info1 h1{
         position: absolute;
-        top:5%;
+        top:25%;
         left: 15%;
         z-index: 2;
     }
@@ -478,7 +479,7 @@
         width: 30%;
         height: 1%;
         background-color: #eabe68;
-        top:11%;
+        top:31%;
         left: 0%;
         margin-left: 15%;
     }
@@ -488,7 +489,7 @@
         display: inline-block;
         width: 100%;
         height: 20vh;
-        top:10%;
+        top:30%;
         padding: 30px 20px;
         z-index: 2;
         justify-content: center;
@@ -519,12 +520,13 @@
         display: inline-flex;
         width: 100%;
         height: 15%;
-        bottom: 40%;
+        bottom: 20%;
         z-index: 2;
         justify-content: center;
         align-items: center;
         font-size: 0.9rem;
         margin-left: -2vw;
+        
     }
 
     .footer-socialmedia svg{
@@ -537,7 +539,7 @@
         display: inline-flex;
         width: 100%;
         height: 20%;
-        bottom: 26%;
+        bottom: 0%;
         z-index: 2;
         justify-content: center;
         align-items: center;
@@ -552,6 +554,7 @@
         position: relative;
         left: 33.333%;
         width: 66.666%;
+        bottom: 0;
         height: 25vh;
     }
 
@@ -638,13 +641,24 @@
         padding: 1vw;
     }
 
+    #linhafooter2{
+        position: absolute;
+        width: 90%;
+        height: 1%;
+        background-color: #747474;
+        bottom:0;
+        left: 0;
+        margin: 0 5% 0 5%;
+        opacity: 0.3;
+    }
+
     .footer3{
         display: inline-flex;
         position: absolute;
-        bottom: 15%;
+        bottom: 0%;
         left: 33.333%;
         width: 66.666%;
-        height: 30vh;
+        height: 15vh;
     }
     
     .footer3 p{
@@ -652,7 +666,7 @@
         width: 40vw;
         left: 40%;
         top:25%;
-        transform: translate(-50%,-45%);
+        transform: translate(-45%);
         font-size: 1rem;
         color: #fff;
         opacity: 0.8;
@@ -664,7 +678,7 @@
         width: 13vw;
         left:90%;
         top:25%;
-        transform: translate(-78%,-45%);
+        transform: translate(-78%);
         opacity: 0.8; 
     }
     
