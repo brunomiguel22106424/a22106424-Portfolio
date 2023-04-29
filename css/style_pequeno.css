@@ -245,16 +245,24 @@
     .about-me-photo{
         display: flex;
         position: absolute;
-        width: 45vw;
+        width: 70vw;
         height: 50vw;
         border-top: 1.5vw #eabe68 solid;
+    }
+
+    .about-me-photo > h1{
+        display: flex;
+        position: absolute;
+        top:40%;
+        left: 50%;
+        font-size: x-large;
     }
 
     .about-me-photo > img{
         display: flex;
         position: absolute;
-        top: 50%;
-        left: 53%;
+        top: 40%;
+        left: 30%;
         transform: translate(-50%,-50%);
         width: 30vw;
         height: 30vw;
@@ -275,11 +283,11 @@
     .about-me-content-textabs{
         display: flex;
         position: absolute;
-        width: 70vw;
+        width: 80vw;
         height: 50vh;
         align-items: center;
         letter-spacing: 1px;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: white;
         padding: 1vw;
         text-align: center;
