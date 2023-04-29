@@ -43,6 +43,14 @@
         float: right;  
     }
 
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
     .first-content{
         width: 100%;
         height: 80vh;
