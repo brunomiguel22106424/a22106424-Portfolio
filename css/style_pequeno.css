@@ -227,21 +227,6 @@
         background-image: linear-gradient(176deg,#1a1919 80%, #9c9b9b calc(80% + 2px));
     }
 
-    .scroll-down-container{
-        display: none;
-        z-index: -10;  
-    }
-    
-    @keyframes scroll{
-        0%{
-            transform: translateY(0px);
-        }
-    
-        100%{
-            transform: translateY(0px);
-        }
-    }
-
     .about-me-content{
         display: flexbox;
         position: absolute;
@@ -284,20 +269,22 @@
         top:37%;
         left: 50%;
         transform: translate(-50%, -10%);
+        
         border-bottom: 1.5vw #eabe68 solid;
     }
     
     .about-me-content-textabs{
         display: flex;
         position: absolute;
-        width: 45vw;
+        width: 70vw;
         height: 50vh;
         align-items: center;
         letter-spacing: 1px;
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: white;
         padding: 1vw;
         text-align: center;
+        background-color: #74747436;
     }
 
     h1{
