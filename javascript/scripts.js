@@ -10,6 +10,18 @@ document.querySelector(".hover-underline").onclick = function() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+document.querySelector(".hover-underline2").onclick = function() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+document.querySelector(".hover-underline3").onclick = function() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+document.querySelector(".hover-underline4").onclick = function() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
 
 document.querySelector(".button-darkmode").onclick = function() {
     var botao = document.querySelector(".button-darkmode");

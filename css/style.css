@@ -151,13 +151,13 @@ nav label {
     color: #f1f1f1;
   }
 
-  .hover-underline {
+  .hover-underline,.hover-underline2,.hover-underline3,.hover-underline4 {
     position: relative;
     color: #FFFFFF;
     text-decoration: none;
   }
 
-  .hover-underline::after {
+  .hover-underline::after,.hover-underline2::after,.hover-underline3::after,.hover-underline4::after {
     content: '';
     position: absolute;
     width: 15%;
@@ -171,7 +171,7 @@ nav label {
     transform: scaleX(0);
   }
 
-  .hover-underline:hover::after {
+  .hover-underline:hover::after,.hover-underline2:hover::after,.hover-underline3:hover::after,.hover-underline4:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
