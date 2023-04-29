@@ -60,6 +60,7 @@
         background-size: cover;
         display:none;
         justify-content: center;
+        
     }
 
     .container1{
@@ -69,6 +70,7 @@
         height: 60vh;
         align-items: center;
         justify-content: center;
+        background-color: #8f3d3d;
     }
 
     .texto-container1 {
@@ -76,7 +78,8 @@
         position: absolute;
         width: 95%;
         height: 95%;
-        bottom: -20%;
+        bottom: -30%;
+        font-size: large;
     }
 
     .foto-container1{
@@ -85,8 +88,8 @@
         margin-top: 40vw;
         width: 10%;
         height: 60%;
-        bottom: 0;
-        right: 10vw;
+        top:-50vh;
+        right: 40vw;
     }
 
     .foto-container1 > img{
@@ -107,20 +110,20 @@
     .botao-container1{
         display: flex;
         position: absolute;
-        width: 35vw;
+        width: 50vw;
         height: 10vh;
         bottom: -25%;
-        left: 0;
+        left: 5vw;
         z-index: 0;
     }
 
     .botao-container1 button{
         display: flex;
         position: absolute;
-        width: 35vw;
+        width: 50vw;
         height: 10vh;
         bottom: 0vh;
-        left: 0vw;
+        left: 5vw;
         background-color: transparent;
         border: 4px #eabe68 solid;
         cursor: pointer;
