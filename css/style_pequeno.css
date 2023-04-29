@@ -274,9 +274,10 @@
         position: absolute;
         margin-left: 2vw;
         width: 70vw;
-        height: 50vh;
-        top:34%;
+        height: 70vh;
+        top:35%;
         left: 50%;
+        background-color: #1a191959;
         transform: translate(-50%, -10%);
         border-bottom: 1.5vw #eabe68 solid;
     }
@@ -285,10 +286,10 @@
         display: flex;
         position: absolute;
         width: 80vw;
-        height: 50vh;
+        height: 70vh;
         align-items: center;
         letter-spacing: 1px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         color: white;
         padding: 1vw;
         text-align: center;
