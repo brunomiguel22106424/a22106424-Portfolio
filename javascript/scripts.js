@@ -1,66 +1,14 @@
-
 document.getElementById("responsive-menu").onclick = function() {
-    if (document.getElementById("home").style.display === "none") {
-        document.getElementById("home").style.display = "flex";
-    }
-    else {
-        document.getElementById("home").style.display = "none";
-    }
+    document.getElementById("myNav").style.width = "100%";
+}
 
-    if (document.getElementById("aboutme").style.display === "none") {
-        document.getElementById("aboutme").style.display = "flex";
-    }
-    else {
-        document.getElementById("aboutme").style.display = "none";
-    }
+document.querySelector(".closebtn").onclick = function() {
+    document.getElementById("myNav").style.width = "0%";
+}
 
-    if (document.querySelector(".grid-content").style.display === "none") {
-        document.querySelector(".grid-content").style.display = "grid";
-    }
-    else {
-        document.querySelector(".grid-content").style.display = "none";
-    }
-
-    if (document.getElementById("contactme").style.display === "none") {
-        document.getElementById("contactme").style.display = "flex";
-    }
-    else {
-        document.getElementById("contactme").style.display = "none";
-    }
-
-    if (document.getElementById("esconder-scroll").style.display === "none") {
-        document.getElementById("esconder-scroll").style.display = "flex";
-    }
-    else {
-        document.getElementById("esconder-scroll").style.display = "none";
-    }
-
-    if (document.querySelector(".first-content-c").style.display === "none") {
-        document.querySelector(".first-content-c").style.display = "flex";
-    }
-    else {
-        document.querySelector(".first-content-c").style.display = "none";
-    }
-
-    if (document.querySelector(".second-content-c").style.display === "none") {
-        document.querySelector(".second-content-c").style.display = "flex";
-    }
-    else {
-        document.querySelector(".second-content-c").style.display = "none";
-    }
-
-};
-
-
-window.onscroll = () => {
-    if (window.scrollY > 100) {
-        document.querySelector('.text-scroll-down').style.color = '#eabe68';
-    }
-    else{
-        document.querySelector('.text-scroll-down').style.color = '#3f2222';
-    }
-};
-
+document.querySelector(".hover-underline").onclick = function() {
+    document.getElementById("myNav").style.width = "0%";
+}
 
 
 document.querySelector(".button-darkmode").onclick = function() {
@@ -99,8 +47,6 @@ document.querySelector(".button-darkmode").onclick = function() {
     const first_content = document.querySelector(".first-content");
     first_content.classList.toggle("dark-mode-first-content");
 
-    const menu = document.querySelector("nav");
-    menu.classList.toggle("dark-mode-menu");
 
     const second_content = document.querySelector("main");
     second_content.classList.toggle("dark-mode-second-content");
@@ -113,6 +59,9 @@ document.querySelector(".button-darkmode").onclick = function() {
 
     const footer = document.querySelector(".footer");
     footer.classList.toggle("dark-mode-footer");
+
+    const map = document.querySelector(".map");
+    map.classList.toggle("map-dark-mode");
 
 /*
     const terceira_content2 = document.querySelector(".terceira-contentpt2");
