@@ -59,7 +59,6 @@ document.querySelector(".button-darkmode").onclick = function() {
     const first_content = document.querySelector(".first-content");
     first_content.classList.toggle("dark-mode-first-content");
 
-
     const second_content = document.querySelector("main");
     second_content.classList.toggle("dark-mode-second-content");
 

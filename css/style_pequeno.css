@@ -24,6 +24,7 @@
         min-width: 1em;
         max-width: 1em;
         position: relative;
+        right:2vw;
     }
 
     .title{
@@ -168,7 +169,7 @@
         transform: scale(1.5);
         float: right;
         top:2vh;
-        right: 1vw;
+        right: 3vw;
         border: none;
     }
 
