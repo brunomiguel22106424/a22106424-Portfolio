@@ -443,7 +443,7 @@ svg{
 }
 
 .dark-mode-first-content-c{
-    background-image: linear-gradient(176deg,#1a1919 90%, #9c9b9b calc(90% + 2px));
+    background-image: linear-gradient(176deg,#1a1919 80%, #9c9b9b calc(80% + 2px));
 }
 
 .dark-mode-second-content-c{
